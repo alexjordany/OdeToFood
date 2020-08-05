@@ -801,6 +801,9 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
+      "OfficeUIFabricCore/9.6.0": {
+        "type": "package"
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -3821,6 +3824,53 @@
         "lib/netstandard1.6/NuGet.Frameworks.xml",
         "nuget.frameworks.4.7.0.nupkg.sha512",
         "nuget.frameworks.nuspec"
+      ]
+    },
+    "OfficeUIFabricCore/9.6.0": {
+      "sha512": "KWpGqggoAEE3eJ3P1rK2h1OFOyVoZ1I8EMXeF+QV8WXSPiK4KKEkRQxDEMjX6XFh5weC+FEmiewFBDHOjWHhWQ==",
+      "type": "package",
+      "path": "officeuifabriccore/9.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Content/fabric-9.6.0.scoped.css",
+        "content/Content/fabric-9.6.0.scoped.min.css",
+        "content/Content/fabric.css",
+        "content/Content/fabric.min.css",
+        "content/Content/sass/Fabric.Scoped.scss",
+        "content/Content/sass/Fabric.scss",
+        "content/Content/sass/_Animation.scss",
+        "content/Content/sass/_BrandIcon.scss",
+        "content/Content/sass/_Color.scss",
+        "content/Content/sass/_Font.Definitions.scss",
+        "content/Content/sass/_Font.scss",
+        "content/Content/sass/_Grid.scss",
+        "content/Content/sass/_Icon.Definitions.scss",
+        "content/Content/sass/_Icon.scss",
+        "content/Content/sass/_References.scss",
+        "content/Content/sass/_Responsive.scss",
+        "content/Content/sass/_Utility.scss",
+        "content/Content/sass/_Wrapper.scss",
+        "content/Content/sass/mixins/_Animation.Mixins.scss",
+        "content/Content/sass/mixins/_BrandIcon.Mixins.scss",
+        "content/Content/sass/mixins/_Color.Mixins.scss",
+        "content/Content/sass/mixins/_Directionality.Mixins.scss",
+        "content/Content/sass/mixins/_Font.Mixins.scss",
+        "content/Content/sass/mixins/_General.Mixins.scss",
+        "content/Content/sass/mixins/_Grid.Mixins.scss",
+        "content/Content/sass/mixins/_Icon.Mixins.scss",
+        "content/Content/sass/mixins/_Responsive.Mixins.scss",
+        "content/Content/sass/mixins/_ScopedStyles.Mixins.scss",
+        "content/Content/sass/variables/_Animation.Variables.scss",
+        "content/Content/sass/variables/_BrandIcon.Variables.scss",
+        "content/Content/sass/variables/_Color.Variables.scss",
+        "content/Content/sass/variables/_Font.Variables.scss",
+        "content/Content/sass/variables/_General.Variables.scss",
+        "content/Content/sass/variables/_Icon.Variables.scss",
+        "content/Content/sass/variables/_Responsive.Variables.scss",
+        "content/Content/sass/variables/_ZIndex.Variables.scss",
+        "officeuifabriccore.9.6.0.nupkg.sha512",
+        "officeuifabriccore.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -8237,7 +8287,8 @@
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.EntityFrameworkCore.Design >= 3.1.6",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.3",
-      "OdeToFood.Data >= 1.0.0"
+      "OdeToFood.Data >= 1.0.0",
+      "OfficeUIFabricCore >= 9.6.0"
     ]
   },
   "packageFolders": {
@@ -8295,6 +8346,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[3.1.3, )"
+          },
+          "OfficeUIFabricCore": {
+            "target": "Package",
+            "version": "[9.6.0, )"
           }
         },
         "imports": [

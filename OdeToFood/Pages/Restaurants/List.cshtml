@@ -11,32 +11,21 @@
         <div class=" input-group">
             <input type="search" class="form-control" asp-for="SearchTerm" />
             <span class="input-group-btn">
-                <button class="btn btn-dark">Search</button>
+                <button class="btn btn-dark"><i class="ms-Icon ms-Icon--Search"></i></button>
             </span>
         </div>
     </div>
 </form>
-<table class="table">
-    @foreach(var restaurant in Model.Restaurants)
-    {
-    <tr>
-        <td>@restaurant.Name</td>
-        <td>@restaurant.Location</td>
-        <td>@restaurant.Cuisine</td>
-        <td>
-            <a class="btn btn-outline-dark" asp-page="./Detail" asp-route-restaurantId="@restaurant.Id">
-                Details
-            </a>
-            <a class="btn btn-outline-dark" asp-page="./Edit" asp-route-restaurantId="@restaurant.Id">
-                Edit
-            </a>
-        </td>
-    </tr>
-    }
-</table>
+
+@foreach(var restaurant in Model.Restaurants)
+{
+    <partial name="_Summary" model="restaurant" />
+}
+
 
 <a asp-page="./Edit" class="btn btn-dark">Add New</a>
 
+@section footer{ 
 <div>@Model.Message</div>
-
+}
 
