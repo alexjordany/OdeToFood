@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexj\\source\\repos\\Ode To Food\\OdeToFood.Core\\OdeToFood.Core.csproj": {}
+    "C:\\USERS\\ALEXJ\\SOURCE\\REPOS\\ODE TO FOOD\\OdeToFood.Core\\OdeToFood.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexj\\source\\repos\\Ode To Food\\OdeToFood.Core\\OdeToFood.Core.csproj": {
+    "C:\\USERS\\ALEXJ\\SOURCE\\REPOS\\ODE TO FOOD\\OdeToFood.Core\\OdeToFood.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexj\\source\\repos\\Ode To Food\\OdeToFood.Core\\OdeToFood.Core.csproj",
+        "projectUniqueName": "C:\\USERS\\ALEXJ\\SOURCE\\REPOS\\ODE TO FOOD\\OdeToFood.Core\\OdeToFood.Core.csproj",
         "projectName": "OdeToFood.Core",
-        "projectPath": "C:\\Users\\alexj\\source\\repos\\Ode To Food\\OdeToFood.Core\\OdeToFood.Core.csproj",
+        "projectPath": "C:\\USERS\\ALEXJ\\SOURCE\\REPOS\\ODE TO FOOD\\OdeToFood.Core\\OdeToFood.Core.csproj",
         "packagesPath": "C:\\Users\\alexj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexj\\source\\repos\\Ode To Food\\OdeToFood.Core\\obj\\",
+        "outputPath": "C:\\USERS\\ALEXJ\\SOURCE\\REPOS\\ODE TO FOOD\\OdeToFood.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -51,12 +51,31 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[3.1.6, 3.1.6]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[3.1.6, 3.1.6]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[3.1.6, 3.1.6]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }

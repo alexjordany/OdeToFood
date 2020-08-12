@@ -1,11 +1,15 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using OdeToFood.Data;
 
 namespace OdeToFood
 {
@@ -13,10 +17,24 @@ namespace OdeToFood
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            var host = CreateWebHostBuilder(args).Build();
+
+
+                MigrateDatabase(host);
+
+                host.Run();
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
+        private static void MigrateDatabase(IHost host)
+        {
+            using (var scope = host.Services.CreateScope())
+            {
+                var db = scope.ServiceProvider.GetRequiredService<OdeToFoodDbContext>();
+                db.Database.Migrate();
+            }
+        }
+
+        public static IHostBuilder CreateWebHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
