@@ -1,10 +1,10 @@
 ﻿@page
 @model OdeToFood.Pages.Restaurants.ListModel
 @{
-    ViewData["Title"] = "List";
+    ViewData["Title"] = "Restaurants";
 }
 
-<h1>Restaurantes</h1>
+<h1>Restaurants</h1>
 
 <form method="get">
     <div class="form-group">
@@ -21,11 +21,9 @@
 {
     <partial name="_Summary" model="restaurant" />
 }
-
-
-<a asp-page="./Edit" class="btn btn-dark">Add New</a>
-
-@section footer{ 
-<div>@Model.Message</div>
-}
-
+<div>
+    <a asp-page="./Edit" class="btn btn-dark">Add New</a>
+</div>
+<br />
+<br />
+<br />
